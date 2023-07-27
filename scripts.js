@@ -20,16 +20,16 @@ const data = {
     const thirdLastValue = thirdArray[thirdArray.length - 1];
   
     if (firstLastValue >= secondLastValue && firstLastValue >= thirdLastValue) {
-      data.lists[0][1].pop(); // Remove the largest value from the 'first' array
+      data.lists[0][1].pop(); 
       return firstLastValue;
     }
   
     if (secondLastValue >= firstLastValue && secondLastValue >= thirdLastValue) {
-      data.lists[1][1].pop(); // Remove the largest value from the 'second' array
+      data.lists[1][1].pop(); 
       return secondLastValue;
     }
   
-    data.lists[2][1].pop(); // Remove the largest value from the 'third' array
+    data.lists[2][1].pop();
     return thirdLastValue;
   }
   
